@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,400&display=swap');
+
+/*font-family: 'Open Sans', sans-serif;*/
+/*font-family: 'Nunito Sans', sans-serif;*/
+
+header{
+    height: 807px;
+    position: relative;
+    background: url('../images/image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+header:before{
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+}
+
+
+.wrapper{
+    width: 1080px;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+    box-sizing: border-box;
+
+}
+.nav_bar{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #00000066; /*zmienic styl menu*/
+}
+.logo{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo img{
+    margin-right: 5px;
+}
+.logo h1{
+    font: normal normal bold 35px/47px Nunito Sans;
+    letter-spacing: 0;
+    color: rgba(255, 255, 255, 1);
+    opacity: 1;
+}
+.logo span{
+    font: normal normal 800 35px/47px Nunito Sans;
+    letter-spacing: 0;
+    color: rgba(255, 0, 0, 1);
+    opacity: 1;
+}
+.menu{
+    width: 486px;
+    height: 100%;
+  }
+nav{
+    height: 100%;
+}
+.menu nav ul{
+    height: 100%;
+
+  }
+.menu nav li{
+    font: normal normal bold 16px/22px Nunito Sans;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    opacity: 1;
+    height: 100%;
+    width: 150px;
+    line-height: 90px;
+    display: inline;
+    margin-right: 30px;
+    /* wypozycjonuj to normalnie*/
+}
+.menu nav li:hover{         /*dokonczyc*/
+    background: silver;
+    transition: 0.5s;
+}
+.center_items{
+    border-top: 1px solid #FFFFFF33;  /*zrobic ciemniejszy gorny pasek*/
+}
+.center_items .wrapper{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+
+}
+.center_items .wrapper h1{
+    font: normal normal 900 90px/90px Nunito Sans;
+    letter-spacing: 0;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    opacity: 1;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.center_items .wrapper p{
+    text-align: center;
+    font: normal normal bold 16px/22px Nunito Sans;
+    letter-spacing: 0;
+    color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    margin-bottom: 30px;
+}
+.wrapper .buttons button{
+    margin-top: 20px;
+    height: 66px;
+    width: 220px;
+    text-transform: uppercase;
+
+}
+.wrapper .buttons button:first-child{
+
+    background: rgba(255, 0, 0, 1);
+    box-shadow: 0 3px 6px rgba(255, 0, 0, 0.3);
+    border-radius: 40px;
+    opacity: 1;
+    padding: 5px 20px;
+    color: #FFFFFF;
+}
+.wrapper .buttons button:last-child{
+    background: rgba(255, 255, 255, 1);
+    border-radius: 40px;
+    opacity: 1;
+    font: normal normal bold 16px/22px Nunito Sans;
+    letter-spacing: 0;
+    color: rgba(255, 0, 0, 1);
+    }
+
+
+/*main main main main main main main main main main main main*/
+.blog h1{
+    text-align: center;
+    font: normal normal bold 35px/47px Nunito Sans;
+    color: #000000;
+    margin: 50px 0;
+
+}
+.boxes{
+    display: flex;
+    margin: 50px 0 70px 0;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.box h3{
+    font: normal normal normal 19px/26px Nunito Sans;
+    letter-spacing: 0;
+    color: #6A6A6A;
+}
+.box p{
+    font: normal normal 300 14px/19px Open Sans;
+    letter-spacing: 0;
+    color: #6A6A6A;
+}
+.box button{
+    text-align: center;
+    font: normal normal bold 14px/19px Nunito Sans;
+    color: #FFFFFF;
+    width: 142px;
+    height: 40px;
+    background: #FF0000;
+    box-shadow: 0 3px 6px #FF00004D;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+.service{
+    background: #28272C;
+    width: 100%;
+    display: flex;
+
+}
+.text_service{
+    display: block;
+    margin-top: 50px;
+}
+.service .wrapper h1{
+    font: normal normal bold 35px/47px Nunito Sans;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.service .boxes{
+    margin: 40px 0;
+    text-align: center;
+}
+.box_service h3{
+    font: normal normal normal 14px/19px Open Sans;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.box_service p{
+    font: normal normal normal 14px/19px Open Sans;
+    color: #B2B2B2;
+}
+.box_service button{
+    background: #FF0000;
+    box-shadow: 0 3px 6px #FF00004D;
+    border-radius: 40px;
+    font: normal normal bold 14px/19px Nunito Sans;
+    color: #FFFFFF;
+    width: 142px;
+    height: 40px;
+    margin: 40px 0 60px 0;
+    text-transform: uppercase;
+}
+.contact{
+    width: 904px;
+    height: 500px;
+    margin: 0 auto;
+
+}
+.title_contact img{
+    height: 350px;
+}
+.contact_content{
+    display: flex;
+    margin-top: 50px;
+}
+
+.form_items .inputs{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+.form_items .inputs input:first-child{
+    background: #FFFFFF;
+    box-shadow: 0 1px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.form_items .inputs input:nth-child(2){
+    background: #FFFFFF;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    }
+.form_items textarea {
+    background: #FFFFFF;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+}
+
+
+.form_items [placeholder]{
+    font: normal normal normal 16px/22px Nunito Sans;
+    letter-spacing: 0;
+    color: #B2B2B2;
+}
+.legal_rights{
+    margin-left: 10px;
+   }
+.legal_rights input {
+    margin: 5px;
+    background: transparent;
+
+}
+.legal_rights label{
+    font: normal normal 300 10px/14px Open Sans;
+    letter-spacing: 0;
+    color: #B2B2B2;
+}
+.form_items .button_right{
+        margin-top: 15px;
+        text-align: right;
+}
+.form_items .button_right button{
+    background: #FFFFFF;;
+    box-shadow: 0 3px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 40px;
+    width: 142px;
+    height: 40px;
+    text-align: center;
+    font: normal normal bold 14px/19px Nunito Sans;
+    color: #FF0000;
+}
+.logo_wrapper h1{
+    font: normal normal bold 25px/34px Nunito Sans;
+    color: #FFFFFF;
+    }
+.logo_wrapper span{
+    font: normal normal 800 25px/34px Nunito Sans;
+    letter-spacing: 0;
+    color: #FF0000;
+}
+
+footer{
+    background: #28272c;
+    margin-top: 50px;
+    display: flex;
+}
+.logo_footer{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.logo_footer span{
+    font: normal normal 800 25px/34px Nunito Sans;
+    color: #FF0000;
+}
+.logo_footer p{
+    font: normal normal bold 25px/34px Nunito Sans;
+    color: #FFFFFF;
+}
+.footer_menu{
+    width: 100%;
+    display: flex;
+    margin: 20px 0 40px 0;
+    }
+.column1, .column2 {
+    width: 25%;
+}
+.column1 ul>li:nth-child(1) a:first-child{          
+    color: #FF0000;
+}
+.column1 a, .column2 a{
+    text-decoration: none;
+    font: normal normal bold 14px/19px Nunito Sans;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.column1 li, .column2 li{
+    padding: 1px 0;
+}
+.copy_wright {
+    flex-grow: 1;
+    font: normal normal 300 12px/16px Nunito Sans;
+    color: #D1D1D1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
